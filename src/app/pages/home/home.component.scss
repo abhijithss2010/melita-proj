@@ -1,0 +1,30 @@
+@import "../../../assets/scss/custom/base/variables";
+@import "../../../assets/scss/custom/mixins/rem-calc";
+
+.db-tile {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  i {
+    font-size: rem-calc(50px);
+    color: $blue;
+  }
+}
+
+.db-tile-head {
+  font-size: rem-calc(20px);
+  color: $gray-dark;
+}
+
+.db-tile-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.price {
+  font-weight: $font-weight-bold;
+  font-size: rem-calc(18px);
+  color: #f05f2c;
+}
