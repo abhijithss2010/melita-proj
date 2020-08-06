@@ -1,16 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 
+import { UIShellModule } from 'carbon-components-angular';
+import { HeaderComponent } from './core/components/header/header.component';
+import { SharedModule } from './core/shared/shared.module';
+import { PageNotFoundComponent } from './core/components/page-not-found/page-not-found.component';
+import { LoadingModule } from './core/modules/loading/loading.module';
+import { SidenavComponent } from './core/components/sidenav/sidenav.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    PageNotFoundComponent,
+    SidenavComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    UIShellModule,
+    SharedModule,
+    AppRoutingModule,
+    LoadingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
