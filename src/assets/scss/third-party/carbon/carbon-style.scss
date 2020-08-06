@@ -1,9 +1,4 @@
-//
-// Copyright IBM Corp. 2016, 2018
-//
-// This source code is licensed under the Apache-2.0 license found in the
-// LICENSE file in the root directory of this source tree.
-//
+@import "./carbon-override-settings";
 
 //-------------------------
 // 🌍 Global
@@ -118,7 +113,7 @@ $deprecations--message: "Deprecated code was found, this code will be removed be
 // @import "~carbon-components/scss/components/toggle/toggle";
 // @import "~carbon-components/scss/components/search/search";
 // @import "~carbon-components/scss/components/select/select";
-@import "~carbon-components/scss/components/text-input/text-input";
+// @import "~carbon-components/scss/components/text-input/text-input";
 // @import '~carbon-components/scss/components/text-area/text-area';
 // @import '~carbon-components/scss/components/number-input/number-input';
 // @import '~carbon-components/scss/components/form/form';
@@ -156,7 +151,7 @@ $deprecations--message: "Deprecated code was found, this code will be removed be
 // 🔬 Experimental
 //-------------------------------------
 // @import '~carbon-components/scss/components/pagination/unstable_pagination';
-// @import '~carbon-components/scss/components/ui-shell/ui-shell';
+@import "~carbon-components/scss/components/ui-shell/ui-shell";
 
 //-------------------------------------
 // 🙈 Hidden (Not exposed on website)

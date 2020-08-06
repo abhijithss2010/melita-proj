@@ -1,0 +1,39 @@
+melita-sidenav {
+  background: $dark-blue;
+  width: rem-calc(235px);
+
+  .side-nav-item {
+    padding: rem-calc(14px 15px 14px 25px);
+    color: $white;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    border-width: 1px 0 1px 5px;
+    cursor: pointer;
+    font-size: rem-calc(15px);
+    line-height: rem-calc(20px);
+  }
+
+  .side-nav-item i {
+    margin-right: $spacing-03;
+    color: $sidenav-icon-color;
+    font-size: rem-calc(18px);
+  }
+
+  .side-nav-item.active {
+    background: $side-nav-list-active-bg;
+    border: 1px solid $side-nav-list-border;
+    border-width: 1px 0;
+    border-left: 5px solid $sidenav-icon-active-color;
+
+    i {
+      color: $sidenav-icon-active-color;
+    }
+  }
+
+  .side-nav-item:focus {
+    /* border: 0; */
+    /* box-shadow: none; */
+    outline: none;
+  }
+}

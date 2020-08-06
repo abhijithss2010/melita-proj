@@ -1,0 +1,23 @@
+<header>
+  <a href="" class="brand-holder" routerLink="home">
+    MELITA
+  </a>
+
+  <div class="extra-menu">
+    <ul>
+      <li>
+        <i class="fas fa-bell"></i>
+      </li>
+    </ul>
+  </div>
+  <div class="profile-menu">
+    <ibm-header-menu title="{{ userData.firstName }} {{ userData.lastName }}">
+      <ibm-header-item>Edit</ibm-header-item>
+      <ibm-header-item>Logout</ibm-header-item>
+    </ibm-header-menu>
+
+    <span class="profile-pic">
+      <img src="assets/images/avatar_lg.jpg" alt="" />
+    </span>
+  </div>
+</header>

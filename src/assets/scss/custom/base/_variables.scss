@@ -1,0 +1,60 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+
+$red-orange: #f05f2c;
+$blue: #3b86ff;
+$dark-orange: #e9bd2e;
+$dark-blue: #43425d;
+$yellow: #e6da5d;
+$green: #66c75b;
+
+$white: #fff !default;
+$white-shade: #f3f3f3 !default;
+$grey-light-1: #c1c1c1 !default;
+$gray-light-2: #989898 !default;
+$gray-dark: #565656 !default;
+$black: #000 !default;
+
+//optional considerations
+
+$teal-o: #48c4b7;
+$citrus-o: #faae53;
+$salsa-o: #ed6a47;
+$salsa-o: #ed6a47;
+$green-o: #ced665;
+$blue-light-o: #afe6f1;
+$blue-dark-o: #3a98c7;
+
+$teal-dark-o: #2aa296;
+$salsa-dark-o: #e34316;
+$green-dark-o: #8e9617;
+$blue-dark-o: #3684b9;
+
+$teal-white-o: #c1e7e4;
+$salsa-white-o: #ffd5a3;
+$green-white-o: #d7de82;
+$blue-white-o: #d2eef7;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: "Open Sans", "IBM Plex Sans", Roboto, "Helvetica Neue",
+  Arial, "Noto Sans", sans-serif !default;
+
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
+
+//navbar
+$side-nav-list-border: #606075;
+$side-nav-list-active-bg: #5a596a;
+$sidenav-bg: $dark-blue;
+$sidenav-icon-color: #a5a4bf;
+$sidenav-icon-active-color: $dark-orange;
