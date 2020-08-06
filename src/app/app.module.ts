@@ -10,6 +10,7 @@ import { SharedModule } from './core/shared/shared.module';
 import { PageNotFoundComponent } from './core/components/page-not-found/page-not-found.component';
 import { LoadingModule } from './core/modules/loading/loading.module';
 import { SidenavComponent } from './core/components/sidenav/sidenav.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SidenavComponent } from './core/components/sidenav/sidenav.component';
     SharedModule,
     AppRoutingModule,
     LoadingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

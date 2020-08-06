@@ -1,1 +1,62 @@
-<p>offers works!</p>
+<h2 class="page-head">Offers</h2>
+<div class="bx--row">
+  <ng-container *ngFor="let offer of offers; let i = index">
+    <div
+      class="bx--col-md-2 offer-tile"
+      (click)="selectedOffer(offer.id)"
+      [ngClass]="{ active: selectedOfferId == offer.id }"
+    >
+      <div class="offer-tile-head">
+        <div class="offer-icon-holder">
+          <i class="fas fa-money-bill-alt" aria-hidden="true"></i>
+        </div>
+        <div class="offer-title">
+          {{ offer.name }}
+        </div>
+      </div>
+      <div class="box">
+        <div class="offer-tile-date">
+          <dl>
+            <dt>Valid from</dt>
+            <dd>{{ offer.contractStartDate }}</dd>
+            <dt>Valid to</dt>
+            <dd>{{ offer.contractEndDate }}</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>
+
+<div class="subs-wrap" *ngIf="subscriptions?.length">
+  <div class="bx--row">
+    <div
+      class="bx--col-md-2"
+      *ngFor="let subscription of subscriptions; let i = index"
+    >
+      <div class="subs-tile box">
+        <div class="subs-icon-holder">
+          <ng-container [ngSwitch]="subscription.type">
+            <ng-container *ngSwitchCase="SubType.Mobile">
+              <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+            </ng-container>
+            <ng-container *ngSwitchCase="SubType.Televison">
+              <i class="fas fa-tv" aria-hidden="true"></i>
+            </ng-container>
+            <ng-container *ngSwitchCase="SubType.Telephony">
+              <i class="fas fa-phone-alt" aria-hidden="true"></i>
+            </ng-container>
+            <ng-container *ngSwitchCase="SubType.Internet">
+              <i class="fas fa-wifi" aria-hidden="true"></i>
+            </ng-container>
+          </ng-container>
+        </div>
+        <div class="subs-title">
+          {{ subscription.name }}
+        </div>
+        <div class="subs-details"></div>
+      </div>
+    </div>
+    <div class="bx--col-md-10"></div>
+  </div>
+</div>

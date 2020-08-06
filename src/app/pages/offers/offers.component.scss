@@ -1,0 +1,95 @@
+@import "../../../assets/scss/custom/base/variables";
+@import "../../../assets/scss/custom/mixins/rem-calc";
+
+.offer-tile-head {
+  display: flex;
+  align-items: stretch;
+}
+
+.offer-tile-head i {
+  font-size: rem-calc(30px);
+  color: $white;
+}
+
+.offer-icon-holder {
+  padding: rem-calc(16px);
+  .offer-tile:nth-child(even) & {
+    background: $teal-dark-o;
+  }
+  .offer-tile:nth-child(odd) & {
+    background: $salsa-dark-o;
+  }
+}
+
+.offer-title {
+  font-size: rem-calc(18px);
+  color: $white;
+  flex: auto;
+  padding: rem-calc(16px);
+  display: inline-flex;
+  align-items: center;
+
+  .offer-tile:nth-child(even) & {
+    background: $teal-o;
+  }
+  .offer-tile:nth-child(odd) & {
+    background: $salsa-o;
+  }
+}
+
+.box {
+  .offer-tile.active:nth-child(even) & {
+    background: $teal-o;
+  }
+  .offer-tile.active:nth-child(odd) & {
+    background: $salsa-o;
+  }
+}
+
+.offer-tile {
+  cursor: pointer;
+}
+
+dt {
+  color: $gray-dark;
+  font-weight: 700;
+  margin-bottom: rem-calc(8px);
+  .offer-tile.active & {
+    color: $white;
+  }
+}
+
+dd {
+  margin-bottom: rem-calc(16px);
+  .offer-tile.active & {
+    color: $white;
+  }
+}
+
+.subs-tile {
+  padding: 16px;
+}
+
+.subs-wrap {
+  margin-top: 48px;
+  border-top: 1px solid #43425d;
+  padding-top: 32px;
+}
+
+.subs-icon-holder {
+  text-align: center;
+}
+
+.subs-icon-holder i {
+  font-size: 30px;
+  color: #a5a4b6;
+  padding: 8px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.subs-title {
+  font-size: 16px;
+  text-align: center;
+}
