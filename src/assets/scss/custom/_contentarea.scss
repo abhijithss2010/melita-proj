@@ -1,0 +1,17 @@
+main.main-content {
+  display: flex;
+  /* flex: 0 0 auto; */
+  padding-top: rem-calc(70px);
+  /* display: inline-flex; */
+  height: 100vh;
+}
+
+.content-area {
+  flex: auto;
+  padding: rem-calc(20px);
+  overflow: auto;
+}
+
+.page-head {
+  margin-bottom: $layout-02;
+}

@@ -46,14 +46,7 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": [
-              {
-                "input": "src/assets/scss/third-party/carbon/carbon-style.scss",
-                "inject": true,
-                "bundleName": "carbon-style"
-              },
-              "src/styles.scss"
-            ],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
