@@ -11,7 +11,6 @@ import { PageNotFoundComponent } from './core/components/page-not-found/page-not
 import { LoadingModule } from './core/modules/loading/loading.module';
 import { SidenavComponent } from './core/components/sidenav/sidenav.component';
 import { HttpClientModule } from '@angular/common/http';
-
 @NgModule({
   declarations: [
     AppComponent,

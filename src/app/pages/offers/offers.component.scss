@@ -67,13 +67,13 @@ dd {
 }
 
 .subs-tile {
-  padding: 16px;
+  padding: rem-calc(16px);
 }
 
 .subs-wrap {
-  margin-top: 48px;
+  margin-top: rem-calc(48px);
   border-top: 1px solid #43425d;
-  padding-top: 32px;
+  padding-top: rem-calc(32px);
 }
 
 .subs-icon-holder {
@@ -81,15 +81,39 @@ dd {
 }
 
 .subs-icon-holder i {
-  font-size: 30px;
+  font-size: rem-calc(30px);
   color: #a5a4b6;
-  padding: 8px;
+  padding: rem-calc(8px);
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: rem-calc(50px);
+  height: rem-calc(50px);
 }
 
 .subs-title {
-  font-size: 16px;
+  font-size: rem-calc(16px);
+  text-align: center;
+}
+
+.subs-details {
+  h6 {
+    text-align: center;
+    margin: rem-calc(16px 0 8px 0);
+    font-weight: $font-weight-normal;
+  }
+}
+
+.data-type {
+  text-align: center;
+  display: block;
+  margin: rem-calc(8px 0 16px 0);
+  font-size: rem-calc(12px);
+}
+
+.usage-box {
+  border-top: 1px solid $white-shade;
+}
+
+.no-usage-text {
+  font-size: rem-calc(12px);
   text-align: center;
 }

@@ -54,9 +54,38 @@
         <div class="subs-title">
           {{ subscription.name }}
         </div>
-        <div class="subs-details"></div>
+        <div class="subs-details">
+          <h6>Usage details</h6>
+          <div class="bx--row" *ngIf="subscription?.usage; else noUsage">
+            <div
+              class="bx--col usage-box"
+              *ngFor="let usage of subscription.usage"
+            >
+              <melita-pie-chart
+                [doughnutChartData]="[[usage.used, usage.limit - usage.used]]"
+                [doughnutChartLabels]="['Used', 'Remaining']"
+              ></melita-pie-chart>
+              <span class="data-type">
+                <ng-container [ngSwitch]="usage.type">
+                  <ng-container *ngSwitchCase="UsageType.Sms">
+                    SMS
+                  </ng-container>
+                  <ng-container *ngSwitchCase="UsageType.Data">
+                    Data
+                  </ng-container>
+                </ng-container>
+              </span>
+            </div>
+          </div>
+          <ng-template #noUsage>
+            <div class="bx--row">
+              <div class="bx--col usage-box">
+                <p class="no-usage-text">No usage details available</p>
+              </div>
+            </div>
+          </ng-template>
+        </div>
       </div>
     </div>
-    <div class="bx--col-md-10"></div>
   </div>
 </div>

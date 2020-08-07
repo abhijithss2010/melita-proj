@@ -8,6 +8,11 @@ enum SubType {
   Telephony = 'TELEPHONY',
   Internet = 'INTERNET',
 }
+
+enum UsageType {
+  Sms = 'SMS',
+  Data = 'DATA',
+}
 @Component({
   selector: 'melita-offers',
   templateUrl: './offers.component.html',
@@ -18,6 +23,7 @@ export class OffersComponent implements OnInit {
   public subscriptions = [];
   public selectedOfferId = null;
   public SubType = SubType;
+  public UsageType = UsageType;
   constructor(private offersService: OffersService) {}
 
   ngOnInit(): void {
