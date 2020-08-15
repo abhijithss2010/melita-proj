@@ -1,0 +1,9 @@
+@mixin fin-box-shadow() {
+    -webkit-box-shadow: 0px 2px 6px #0000000A;
+    box-shadow: 0px 2px 6px #0000000A;
+}
+
+@mixin fin-button-box-shadow() {
+    -webkit-box-shadow:0px 3px 8px #00000029;
+    box-shadow: 0px 3px 8px #00000029;
+}

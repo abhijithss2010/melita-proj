@@ -1,0 +1,71 @@
+melita-header {
+  header {
+    width: 100%;
+    display: flex;
+    @include fin-box-shadow();
+    align-items: center;
+    height: rem-calc(70px);
+	background: $white;
+	position: fixed;
+  }
+
+  a.brand-holder {
+    width: rem-calc(235px);
+    display: block;
+    background: #3c3b53;
+    color: $white;
+    text-decoration: none;
+    font-size: rem-calc(17px);
+    font-weight: bold;
+    height: rem-calc(70px);
+    display: inline-flex;
+    align-items: center;
+    padding: rem-calc(0 25px);
+  }
+
+  span.profile-pic img {
+    border-radius: 50%;
+    width: rem-calc(35px);
+    height: rem-calc(35px);
+  }
+
+  ibm-search.bx--form-item {
+    max-width: rem-calc(500px);
+    padding-left: rem-calc(10px);
+  }
+
+  .extra-menu {
+    margin-left: auto;
+  }
+
+  .bx--search-input {
+    background: transparent;
+    border: 0;
+  }
+
+  .extra-menu ul {
+    display: inline-flex;
+    margin: rem-calc(0 30px);
+  }
+
+  .extra-menu ul li {
+    margin: rem-calc(0 15px);
+  }
+
+  .extra-menu {
+    border-right: 2px solid #efeff5;
+    height: rem-calc(30px);
+    align-items: center;
+    display: inline-flex;
+    margin-right: rem-calc(30px);
+  }
+
+  ibm-header-menu {
+    list-style: none;
+  }
+
+  .profile-menu {
+    display: inline-flex;
+    margin-right: rem-calc(40px);
+  }
+}
